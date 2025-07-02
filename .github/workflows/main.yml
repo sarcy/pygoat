@@ -53,5 +53,5 @@ jobs:
           echo $SUPER_SECRET | docker login -u ${{ secrets.REPO_USER }} --password-stdin
           
           docker scout quickview
-          docket scout cves
+          docker scout cves
         
