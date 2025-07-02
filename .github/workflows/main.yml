@@ -61,8 +61,9 @@ jobs:
         with:
           dockerhub-user: ${{ secrets.REPO_USER }}
           dockerhub-password: ${{ secrets.REPO_PASSWORD }}
-          command: quickview, cves
-          only-severeties: critical, high
+          command: quickview,cves
+          # only-severeties: critical, high
+          only-severities: critical,high
           sarif-file: scout-report.sarif
 
       - name: Upload Scout report
